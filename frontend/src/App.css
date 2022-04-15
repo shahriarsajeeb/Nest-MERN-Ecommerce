@@ -201,6 +201,32 @@ label.MuiRating-label {
   .Header{
     display: none;
   }
+  .ProductDetails{
+    padding: 0px 1vmax!important;
+  }
+  .cartInput{
+    overflow: visible!important;
+  }
+  .FavouriteItemsCard>div{
+    overflow: visible!important;
+  }
+  .FavouriteItemsCard>div>a{
+    font-family: sans-serif!important;
+  }
+  h1.discountPrice {
+    font-size: 1.2vmax!important;
+    color: #777!important;
+    margin-left: 5%!important;
+    font-weight: 600!important;
+  }
+
+  .Home__button{
+    height: 44px!important;
+  }
+  span.freeOne{
+    font-size: 2em!important;
+    padding: 5px!important;
+  }
   .ProductCard{
     height: unset!important;
   }

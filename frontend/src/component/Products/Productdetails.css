@@ -83,7 +83,7 @@ input[type="number"] {
   width: 100%!important;
   left: 0!important;
 }
-.home__content > div > h2 {font-size: 3vmax!important;
+.home__content > div > h2 {font-size: 2vmax!important;
 line-height: 1.9;}
 .home__content > div > span{
   height: 30px!important;
