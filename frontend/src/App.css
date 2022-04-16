@@ -219,13 +219,18 @@ label.MuiRating-label {
     margin-left: 5%!important;
     font-weight: 600!important;
   }
-
-  .Home__button{
-    height: 44px!important;
+  h2.jhamela {
+    display: none!important;
   }
-  span.freeOne{
-    font-size: 2em!important;
-    padding: 5px!important;
+  span.freeOne {
+    display: none !important;
+  }
+  .home__content > div > h2 {
+    display: none!important;
+  }
+  button.Home__button {
+    height: 7vmax!important;
+    width: 20vmax!important;
   }
   .ProductCard{
     height: unset!important;
@@ -235,6 +240,15 @@ label.MuiRating-label {
   }
   .paymentContainer{
     height: max-content!important;
+  }
+  .banner{
+    background: transparent!important;
+  }
+  img.bgImg{
+    height: 40vmax!important;
+  }
+  .banner, .bgImg{
+    height: unset!important;
   }
   .Footer.flex.space__around.pz__15 {
     flex-direction: column;
