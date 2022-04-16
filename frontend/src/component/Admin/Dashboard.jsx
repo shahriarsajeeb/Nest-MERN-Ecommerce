@@ -72,6 +72,7 @@ const Dashboard = () => {
        {loading ?
        <Loading />
        :(
+         <>
         <div className="dashboard">
         <MetaData title="Dashboard" />
         <Sidebar />
@@ -110,6 +111,12 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <>
+       <div className="dasboard__mobile">
+         <span>Please use laptop or computer for access this page!</span>
+       </div>
+      </>
+      </>
        )
        }
        </>

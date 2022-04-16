@@ -6,6 +6,8 @@
 }
 body{
   font-family: "Poppins,sans-serif";
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
 }
 Chrome, Safari, Edge, Opera
 input::-webkit-outer-spin-button,
@@ -197,9 +199,18 @@ label.MuiRating-label {
   width: 100%;
   overflow: hidden;
 }
+.dasboard__mobile{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .Header{
     display: none;
+  }
+  .dashboard{
+    display: none!important;
+  }
+  .dasboard__mobile{
+    display: inline!important;
   }
   .offerPriceBox{
     overflow: visible!important;
