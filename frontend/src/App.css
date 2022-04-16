@@ -201,6 +201,9 @@ label.MuiRating-label {
   .Header{
     display: none;
   }
+  .offerPriceBox{
+    overflow: visible!important;
+  }
   .ProductDetails{
     padding: 0px 1vmax!important;
   }
