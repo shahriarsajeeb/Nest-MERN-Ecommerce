@@ -9,7 +9,8 @@ const path = require("path");
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true,limit:"50mb"}));
-app.use(fileUpload());
+app.use(express.urlencoded({ limit: "50mb", extended: true }));
+app.use(fileUpload({useTempFiles: true}));
 
 // config
 if(process.env.NODE_ENV!=="PRODUCTION"){
