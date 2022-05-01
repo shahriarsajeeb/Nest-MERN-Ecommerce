@@ -28,19 +28,9 @@ exports.createUser = catchAsyncErrors(async (req, res, next) => {
       password,
       avatar: { public_id: myCloud.public_id, url: myCloud.secure_url },
     });
+    
+    sendToken(user, 200, res);
 
-    const token = await user.generateToken();
-
-    const options = {
-      expires: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000),
-      httpOnly: true,
-    };
-
-    res.status(201).cookie("token", token, options).json({
-      success: true,
-      user,
-      token,
-    });
   } catch (error) {
     res.status(500).json({
       success: false,
