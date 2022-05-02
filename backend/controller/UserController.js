@@ -29,7 +29,7 @@ exports.createUser = catchAsyncErrors(async (req, res, next) => {
       avatar: { public_id: myCloud.public_id, url: myCloud.secure_url },
     });
     
-    sendToken(user, 200, res);
+    sendToken(user, 201, res);
 
   } catch (error) {
     res.status(500).json({
